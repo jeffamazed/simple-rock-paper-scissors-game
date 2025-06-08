@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rock Paper Scissors Optimized</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Rock Paper Scissors</h1>
+      <div class="btn-container">
+        <button
+          id="rock-btn"
+          class="move-btn"
+          aria-label="Choose rock"
+          type="button"
+        >
+          <img class="move-icon" src="./img/rock-emoji.png" alt="rock move" />
+        </button>
+        <button
+          id="paper-btn"
+          class="move-btn"
+          aria-label="Choose paper"
+          type="button"
+        >
+          <img class="move-icon" src="./img/paper-emoji.png" alt="paper move" />
+        </button>
+        <button
+          id="scissors-btn"
+          class="move-btn"
+          aria-label="Choose scissors"
+          type="button"
+        >
+          <img
+            class="move-icon"
+            src="./img/scissors-emoji.png"
+            alt="scissors move"
+          />
+        </button>
+      </div>
+
+      <div class="info-container" role="status">
+        <p id="moves"></p>
+        <p id="result"></p>
+        <p id="score"></p>
+      </div>
+
+      <div class="btn-cont1">
+        <button id="reset-btn" class="btn" aria-label="Reset score">
+          Reset Score
+        </button>
+        <button id="auto-play-btn" class="btn" aria-label="Auto play">
+          Auto Play
+        </button>
+      </div>
+
+      <dialog
+        id="conf-window"
+        class="conf-window"
+        role="dialog"
+        aria-labelledby="dialog-title"
+      >
+        <p>Are you sure you want to reset the score?</p>
+        <div class="btn-cont2">
+          <button id="yes-btn" class="btn" aria-label="Yes to reset">
+            Yes
+          </button>
+          <button id="no-btn" class="btn" aria-label="No to reset">No</button>
+        </div>
+      </dialog>
+    </main>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
